@@ -1,0 +1,118 @@
+/* line 17, ../../../../../.rvm/gems/ruby-1.9.2-p320@rails3tutorial/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../.rvm/gems/ruby-1.9.2-p320@rails3tutorial/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../.rvm/gems/ruby-1.9.2-p320@rails3tutorial/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../.rvm/gems/ruby-1.9.2-p320@rails3tutorial/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../.rvm/gems/ruby-1.9.2-p320@rails3tutorial/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../.rvm/gems/ruby-1.9.2-p320@rails3tutorial/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../.rvm/gems/ruby-1.9.2-p320@rails3tutorial/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../.rvm/gems/ruby-1.9.2-p320@rails3tutorial/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../.rvm/gems/ruby-1.9.2-p320@rails3tutorial/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_layout.scss */
+body {
+  background: #e3e3e3;
+  margin: 20px;
+  font: 16px/24px sans-serif;
+}
+
+/* line 7, ../sass/_layout.scss */
+ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+/* line 1, ../sass/_messaging.scss */
+.flash-message, .flash-info, .flash-success, .flash-error {
+  position: relative;
+  margin: 0 auto 15px;
+  width: 440px;
+  border-radius: 5px;
+  padding: 10px 45px 10px 15px;
+  color: white;
+  font-weight: bold;
+}
+
+/* line 12, ../sass/_messaging.scss */
+.flash-info {
+  background: #a4a4a4;
+  text-shadow: 0 -1px #838484;
+}
+
+/* line 12, ../sass/_messaging.scss */
+.flash-success {
+  background: #1b942a;
+  text-shadow: 0 -1px #1a7e1c;
+}
+
+/* line 12, ../sass/_messaging.scss */
+.flash-error {
+  background: #ef9000;
+  text-shadow: 0 -1px #e8541c;
+}
+/* line 17, ../sass/_messaging.scss */
+.flash-error li {
+  font-weight: normal;
+}
+
+/* line 28, ../sass/_messaging.scss */
+.flash-icon {
+  display: block;
+  position: absolute;
+  top: 11px;
+  right: 12px;
+}

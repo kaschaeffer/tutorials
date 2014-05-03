@@ -1,0 +1,33 @@
+.flash-message {
+  position: relative;
+  margin: 0 auto 15px;
+  width: $flash-message-width - $flash-message-h-padding * 2 - $flash-message-icon-padding;
+  border-radius: 5px;
+  padding: 10px $flash-message-h-padding + $flash-message-icon-padding 10px $flash-message-h-padding;
+  color: white;
+  font-weight: bold;
+}
+
+@mixin flash-message($type, $background, $text-shadow) {
+  .flash-#{$type} {
+    @extend .flash-message;
+    background: $background;
+    text-shadow: 0 -1px $text-shadow;
+    @if $type == "error" {
+      li {
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+@include flash-message(info, $flash-info-background, $flash-info-text-shadow);
+@include flash-message(success, $flash-success-background, $flash-success-text-shadow);
+@include flash-message(error, $flash-error-background, $flash-error-text-shadow);
+
+.flash-icon {
+  display: block;
+  position: absolute;
+  top: 11px;
+  right: 12px;
+}
