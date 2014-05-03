@@ -1,0 +1,10 @@
+body {
+  background: #e3e3e3;
+  margin: 20px;
+  font: 16px/24px sans-serif;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 20px;
+}

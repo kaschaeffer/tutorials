@@ -1,0 +1,116 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+// useful ideas: organizing all configuration variables
+// in a separate partial, _config.scss
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+$base-color: #333;
+$brand-color: red;
+$brand-80-color: rgba($color-brand, 0.8);
+$accent-color: yellow;
+
+$header-height: 100px;
+$header-background-color: $color-brand;
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {display: inline-block;}
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    &:hover {
+      color: #ddd;
+    }
+  }
+}
+
+@mixin border-radius($radius: 5px) {
+  -webkit-border-radius: $radius;
+  -mox-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.box {@include border-radius(10px);}
+
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}
+
+.error {
+  @extend .message;
+  border-color: red;
+}
+
+.warning {
+  @extend .message;
+  border-color: yellow;
+}
+
+.containter {width: 100%;}
+
+article[role="main"] {
+  float: left;
+  width: 600px / 960px * 100%;
+}
+
+aside[role="complimentary"] {
+  float: right;
+  width: 300px / 960px * 100%;
+}
+
+$border: 1px solid #EFC6F3;
+.post {
+  border-radius: 3px;
+  background: #FFF8FF;
+  border: 1px solid $border;
+  padding: 15px;
+  color: #333333;
+  .title {
+    color: #000000;
+    font-size: 20px;
+  }
+  .alt-title {
+    @extend .title;
+    border-bottom:1px solid $border
+  }
+}
+
+$default-border-radius: 5px !default;
+@mixin border-radius($radius: $default-border-radius) {
+  // do something...
+}
+
+@mixin border-radius($radius: 5px, $moz: true, $webkit: true, $ms: true) {
+  @if $moz    { -moz-border-radius: $radius;}
+  @if $webkit { -webkit-border-radius: $radius;}
+  @if $ms     { -ms-border-radius: $radius;}
+  border-radius: $radius;
+}
+
+@include border-radius($ms: false);
