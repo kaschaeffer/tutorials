@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da4505e2-7ae8-4dca-864a-6731111bac0f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/jmodern/Main.java" afterPath="$PROJECT_DIR$/src/main/java/jmodern/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../guice/Addition/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../guice/Addition/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="modernjava.iws" />
     <ignored path=".idea/workspace.xml" />
